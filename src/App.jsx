@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 const App = () => {
-  return <div>App</div>;
+  return <h1>#31github</h1>;
 };
 
 export default App;
