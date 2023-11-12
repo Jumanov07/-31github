@@ -1,4 +1,4 @@
-const createCounter = (init) => {
+export const createCounter = (init) => {
   let counter = init;
 
   return {
