@@ -3,6 +3,7 @@ const searchInsert = (nums, target) => {
   if (index !== -1) return index;
 
   const array = [...nums, target];
+  
   const sortedArray = array.sort((a, b) => a - b);
 
   return sortedArray.indexOf(target);
