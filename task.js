@@ -1,6 +1,12 @@
-//22
-const interpret = (command) => {
-  return command.split("()").join("o").split("(al)").join("al");
-};
+//23
+const mostWordsFound = (sentences) => {
+  let lengths = [];
 
-interpret("G()(al)");
+  for (let i = 0; i < sentences.length; i++) {
+    const words = sentences[i].split(" ");
+
+    lengths.push(words.length);
+  }
+
+  return Math.max(...lengths);
+};
