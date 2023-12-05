@@ -1,12 +1,4 @@
-//23
-const mostWordsFound = (sentences) => {
-  let lengths = [];
-
-  for (let i = 0; i < sentences.length; i++) {
-    const words = sentences[i].split(" ");
-
-    lengths.push(words.length);
-  }
-
-  return Math.max(...lengths);
+//24
+const arrayStringsAreEqual = (word1, word2) => {
+  return word1.join("") === word2.join("");
 };
