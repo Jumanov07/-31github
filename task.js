@@ -1,4 +1,10 @@
-//24
-const arrayStringsAreEqual = (word1, word2) => {
-  return word1.join("") === word2.join("");
+//25
+const restoreString = (s, indices) => {
+  let array = [];
+
+  for (let i = 0; i < indices.length; i++) {
+    array[indices[i]] = s[i];
+  }
+
+  return array.join("");
 };
