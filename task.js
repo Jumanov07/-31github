@@ -1,10 +1,12 @@
-//25
-const restoreString = (s, indices) => {
-  let array = [];
+const sortSentence = (s) => {
+  const words = s.split(" ");
 
-  for (let i = 0; i < indices.length; i++) {
-    array[indices[i]] = s[i];
-  }
+  const newArray = words.map((word) => ({
+    word: word.slice(0, -1),
+    order: +word[word.length - 1],
+  }));
 
-  return array.join("");
+  newArray.sort((a, b) => a.order - b.order);
+
+  return newArray.map((obj) => obj.word).join(" ");
 };
